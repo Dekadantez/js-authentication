@@ -28,11 +28,11 @@
 		transition: border-color 0.3s;
 
 		&:hover {
-			border-color: s.color(main);
+			border-color: s.color(gray);
+		}
+		&:focus {
+			border-color: s.color(main)
 		}
 
-		&--error {
-			border-color: s.color(red) !important;
-		}
 	}
 }
