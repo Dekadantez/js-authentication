@@ -20,7 +20,7 @@ class FieldSelect {
     const parent = target.parentElement.parentElement //виходимо на філд контейнер
     const list = target.parentElement //отримуємо список опцій
 
-    const active = list.querySelector('*[active') //пінднімаємось в батьківський елемент ул і шукаємо активний елемент актів, якщо вона є то вимикаємо її
+    const active = list.querySelector('*[active]') //пінднімаємось в батьківський елемент ул і шукаємо активний елемент актів, якщо вона є то вимикаємо її
 
     if (active) active.toggleAttribute('active')
 
