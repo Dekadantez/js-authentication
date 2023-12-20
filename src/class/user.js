@@ -7,7 +7,7 @@ class User {
   }
   static #list = []
 
-  static #count = 1
+  static #count = 0
 
   constructor({ email, password, role }) {
     this.id = User.#count++
@@ -54,6 +54,15 @@ class User {
       ) || null
     )
   }
+
+  static getById(id) {
+    return (
+      this.#list.find((user) => user.id === Number(id)) ||
+      null
+    )
+  }
+
+  static getList = () => this.#list
 }
 
 module.exports = { User }
